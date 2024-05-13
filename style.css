@@ -96,3 +96,19 @@
     text-align: center;
     
 }
+#titleSetInput{
+  border-radius: 5px;
+  border-style: none;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+#titleSetButton{
+  font-size: 1.3em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: rgb(100, 0, 0);
+}
+#titleSetButton:hover{
+  background-color: rgb(80, 0, 0);
+}
