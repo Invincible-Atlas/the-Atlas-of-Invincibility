@@ -10,3 +10,4 @@ function setTitle(id){
         document.getElementById("title").innerHTML = getCookie("title");
     }
 }
+setTitle();
