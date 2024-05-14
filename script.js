@@ -10,4 +10,16 @@ function setTitle(id){
         document.getElementById("title").innerHTML = getCookie("title");
     }
 }
+function setFav(id){
+    console.log(id);
+    
+    
+    
+    if(id!==""){
+        document.cookie =  "fav=" + document.getElementById(id).value + "; path=/"
+    }
+    if(getCookie("fav")!==""){
+        document.getElementById("title").innerHTML = getCookie("title");
+    }
+}
 setTitle();
