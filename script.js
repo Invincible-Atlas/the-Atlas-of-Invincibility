@@ -7,7 +7,7 @@ function setTitle(id){
         document.cookie =  "title=" + document.getElementById(id).value + "; path=/"
     }
     if(getCookie("title")!==""){
-        document.getElementById("title").innerHTML = getCookie("title");
+        document.querySelector("title").innerHTML = getCookie("title");
     }
 }
 function setFav(id){
