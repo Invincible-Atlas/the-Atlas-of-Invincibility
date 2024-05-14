@@ -19,7 +19,8 @@ function setFav(id){
         document.cookie =  "fav=" + document.getElementById(id).value + "; path=/"
     }
     if(getCookie("fav")!==""){
-        document.getElementById("title").innerHTML = getCookie("title");
+        document.getElementById("favicon").innerHTML = getCookie("fav");
     }
 }
 setTitle();
+setFav();
