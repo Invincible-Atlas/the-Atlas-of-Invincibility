@@ -22,5 +22,8 @@ function setFav(id){
         document.getElementById("favicon").innerHTML = getCookie("fav");
     }
 }
+function getAllCookies(){
+    document.getElementById("cookieGetOutput").innerHTML=document.cookie;
+}
 setTitle();
 setFav();
