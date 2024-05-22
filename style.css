@@ -86,7 +86,7 @@
 .centerFlex{
     display: flex;
     justify-content: center;
-    
+}    
 .headcontainer{
     /* border: solid black 2px; */
     padding: 0px;
