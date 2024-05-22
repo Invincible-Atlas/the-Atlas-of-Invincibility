@@ -9,7 +9,7 @@ const splashList = [
     "drop tables *",
     "Pootis",
     "Sandvich",
-    "cmd is better than powershell. Fight me",
+    "Powershell is better than Batch. Fight me",
     "I used to be an adventurer like you. Then I took an arrow to the knee.",
     "Let me guess. Someone stole your sweet roll?",
     "No lollygaggin'",
