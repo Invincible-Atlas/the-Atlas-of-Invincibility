@@ -1,14 +1,14 @@
+alert(document.cookie);
 function setTitle(id){
     console.log(id);
     
     
     
     if(id!==""){
-        document.cookie =  "title=" + document.getElementById(id).value + "; path=/"
+        document.cookie = "title=" + document.getElementById(id).value + ";";
     }
-    if(getCookie("title")!==""){
-        document.querySelector("title").innerHTML = getCookie("title");
-    }
+    document.querySelector("title").innerHTML = getCookie("title");
+
 }
 function setFav(id){
     console.log(id);
@@ -25,5 +25,6 @@ function setFav(id){
 function getAllCookies(){
     document.getElementById("cookieGetOutput").innerHTML=document.cookie;
 }
-setTitle();
-setFav();
+alert(document.cookie)
+setTitle("");
+setFav("");
