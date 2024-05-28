@@ -25,7 +25,7 @@ function getAllCookies(){
     document.getElementById("cookieGetOutput").innerHTML=document.cookie;
 }
 function tabPreset(index){  
-    const presetList=[["Home | Schoology","https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"],["fsafda","fasfd"]];
+    const presetList=[["Home | Schoology","https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"],["My Drive - Google Drive","https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png"]];
 
     document.cookie =  "fav=" + presetList[index][1] + ";";
     document.getElementById("favicon").innerHTML = getCookie("fav");
@@ -34,6 +34,9 @@ function tabPreset(index){
 }
 function schoolPreset(){
     tabPreset(0);
+}
+function drivePreset(){
+    tabPreset(1);
 }
 setTitle("");
 setFav("");
