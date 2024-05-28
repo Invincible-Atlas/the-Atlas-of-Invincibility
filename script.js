@@ -1,4 +1,3 @@
-const presetList=[["Home | Schoology","https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"],["fsafda","fasfd"]];
 function setTitle(id){
     console.log(id);
     if(id!==""){
@@ -25,12 +24,16 @@ function setFav(id){
 function getAllCookies(){
     document.getElementById("cookieGetOutput").innerHTML=document.cookie;
 }
-function tabPreset(){  
-    
-    document.cookie =  "fav=" + presetList[0][1] + ";";
+function tabPreset(index){  
+    const presetList=[["Home | Schoology","schoolFav.ico"],["fsafda","fasfd"]];
+
+    document.cookie =  "fav=" + presetList[index][1] + ";";
     document.getElementById("favicon").innerHTML = getCookie("fav");
-    document.cookie = "title=" + presetList[0][0] + ";";
+    document.cookie = "title=" + presetList[index][0] + ";";
     document.querySelector("title").innerHTML = getCookie("title");
+}
+function schoolPreset(){
+    tabPreset(0);
 }
 setTitle("");
 setFav("");
