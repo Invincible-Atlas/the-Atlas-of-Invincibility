@@ -151,8 +151,11 @@
 .myButton:hover{
   background-color: rgb(80, 0, 0);
 }
-#cookieGetOutput{
+.myP{
   font-size: 1.3em;
   font-family: arial;
 }
-
+#presetLabel{
+  font-size: 1.3em;
+  font-family: arial;
+}
