@@ -18,14 +18,14 @@ function setFav(id){
         document.cookie =  "fav=" + document.getElementById(id).value + "; path=/"
     }
     if(getCookie("fav")!==""){
-        document.getElementById("favicon").innerHTML = getCookie("fav");
+        document.getElementById("favicon").href = getCookie("fav");
     }
 }
 function getAllCookies(){
     document.getElementById("cookieGetOutput").innerHTML=document.cookie;
 }
 function tabPreset(index){  
-    const presetList=[["Home | Schoology","schoolFav.ico"],["fsafda","fasfd"]];
+    const presetList=[["Home | Schoology","https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico"],["fsafda","fasfd"]];
 
     document.cookie =  "fav=" + presetList[index][1] + ";";
     document.getElementById("favicon").innerHTML = getCookie("fav");
