@@ -33,7 +33,7 @@ function openAB(link,fav,title){
   var titleEl = document.createElement("title");
   var favEl = document.createElement("link");
   frame.width = "100%";
-  frame.height = "99%";
+  frame.height = "100%";
   frame.style.border = "none";
   frame.style.margin = "0px";
   frame.src = link;
@@ -45,8 +45,12 @@ function openAB(link,fav,title){
   abWin.document.head.appendChild(titleEl);
   abWin.document.head.appendChild(favEl)
 }
-function openGame(link){
+function openLocalGame(link){
   var currentUrl = window.location.href;
   var domain = currentUrl.split("/")[0];
   openAB(domain+link,getCookie("fav"),getCookie("title"))
+}
+function openGame(link){
+  
+  openAB(link,getCookie("fav"),getCookie("title"))
 }
