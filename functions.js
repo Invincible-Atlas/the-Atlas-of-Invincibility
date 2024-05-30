@@ -27,3 +27,26 @@ function getCookie(cname) {
     }
     return "";
 }
+function openAB(link,fav,title){
+  var abWin = open();
+  var frame = document.createElement("iframe");
+  var titleEl = document.createElement("title");
+  var favEl = document.createElement("link");
+  frame.width = "100%";
+  frame.height = "99%";
+  frame.style.border = "none";
+  frame.style.margin = "0px";
+  frame.src = link;
+  titleEl.innerHTML = title;
+  favEl.rel = "icon";
+  favEl.type = "image/x-icon";
+  favEl.href = fav;
+  abWin.document.body.appendChild(frame);
+  abWin.document.head.appendChild(titleEl);
+  abWin.document.head.appendChild(favEl)
+}
+function openGame(link){
+  var currentUrl = window.location.href;
+  var domain = currentUrl.split("/")[0];
+  openAB(domain+link,getCookie("fav"),getCookie("title"))
+}

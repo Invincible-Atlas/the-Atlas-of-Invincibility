@@ -168,3 +168,8 @@ body {
 .presetButton{
   font-size: 1em;
 }
+#gameFrame{
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}

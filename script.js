@@ -6,6 +6,7 @@ function setTitle(id){
     if(getCookie("title")!==""){
         document.querySelector("title").innerHTML = getCookie("title");
     }else{
+        document.cookie = "title=The Atlas of Invincibility;";
         document.querySelector("title").innerHTML = "The Atlas of Invincibility";
     }
 }
@@ -40,3 +41,4 @@ function drivePreset(){
 }
 setTitle("");
 setFav("");
+setInterval
