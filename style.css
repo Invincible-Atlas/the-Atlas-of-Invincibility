@@ -173,3 +173,25 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.actualNav{
+  position: sticky;
+  top: -40px;
+  margin: auto;
+  margin-bottom: -20px;
+  text-align: center !important;
+  /* max-width: 520px; */
+  transition: all 0.5s;
+  
+  
+}
+.actualNav:hover{
+  top: 0px;
+}
+.longMain{
+  height: 100%;
+}
+.withBorder{
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 0px;
+}
